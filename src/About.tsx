@@ -13,7 +13,7 @@ class About extends Component {
   render() {
     return (
 
-      <div>test about 22
+      <div>
         <button onClick={() => {ee.emit('infomsg',{msg:'test'})}}>Test</button>
 		<Button color="danger">Danger!</Button>
       </div>

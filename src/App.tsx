@@ -38,7 +38,7 @@ class App extends Component {
             <Link to="/about">About</Link> 
             <Link to="/external">External</Link>
           </div>
-          {this.state.infomessage != null && this.state.infomessage != '' && 
+          {this.state.infomessage !== null && this.state.infomessage !== '' && 
 			<Alert color="primary">
 			{this.state.infomessage}
 			</Alert>}
