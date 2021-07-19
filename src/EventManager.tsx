@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+
 import EventEmitter from 'eventemitter3';
 
 var ee = new EventEmitter();
