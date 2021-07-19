@@ -1,16 +1,24 @@
 import logo from './logo.svg';
+import React, { Component } from 'react';
 
-function About() {
+import ee from './EventManager';
+
+class About extends Component {
+  componentWillMount() {
+  }
+  componentDidMount() {
+	 
+  }
+  
+  render() {
     return (
-        <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>
-            About
-          </h1>
-        </header>
+
+      <div>test about 22
+        <button onClick={() => {ee.emit('infomsg',{msg:'test'})}}>Test</button>
       </div>
-    );
+    )
+  }
+  
 }
 
 export default About;
