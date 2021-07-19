@@ -11,6 +11,7 @@ import External from './External';
 import ee from './EventManager';
 
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component {
   componentWillMount() {
     ee.on('infomsg', this.onInfomsg, this);
