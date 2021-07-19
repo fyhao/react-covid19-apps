@@ -11,6 +11,8 @@ import External from './External';
 import ee from './EventManager';
 
 import React, { Component } from 'react';
+import { Alert } from 'reactstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component {
   componentWillMount() {
@@ -36,7 +38,10 @@ class App extends Component {
             <Link to="/about">About</Link> 
             <Link to="/external">External</Link>
           </div>
-          <p>msg: <span>{this.state.infomessage}</span></p>
+          {this.state.infomessage != null && this.state.infomessage != '' && 
+			<Alert color="primary">
+			{this.state.infomessage}
+			</Alert>}
           <Switch>
             <Route exact path="/">
               <Home />
