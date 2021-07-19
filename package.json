@@ -1,8 +1,8 @@
 {
-  "name": "create-react-app-ghpages-demo",
+  "name": "react-covid19-apps",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://clydedz.github.io/create-react-app-ghpages-demo/",
+  "homepage": "https://fyhao.github.io/react-covid19-apps/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
