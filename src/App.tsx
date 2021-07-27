@@ -5,9 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import About from './About';
 import Home from './Home';
-import External from './External';
 import ee from './EventManager';
 
 import React, { Component } from 'react';
@@ -34,9 +32,7 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div>
           <div className="menu">
-            <Link to="/">Home</Link>  
-            <Link to="/about">About</Link> 
-            <Link to="/external">External</Link>
+            <Link to="/">Home</Link>
           </div>
           {this.state.infomessage !== null && this.state.infomessage !== '' && 
 			<Alert color="primary">
@@ -45,12 +41,6 @@ class App extends Component {
           <Switch>
             <Route exact path="/">
               <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/external">
-              <External />
             </Route>
           </Switch>
         </div>
